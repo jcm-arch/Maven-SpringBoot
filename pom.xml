@@ -65,8 +65,8 @@
 						<configuration>
 							<additionalProperties>
 								<java.version>${java.version}</java.version>
-								<some.custom-prop>${some.custom.prop}</some.custom-prop>
-							</additionalProperties>
+								<some.custom.prop>${some.custom.prop}</some.custom.prop>
+                            </additionalProperties>
 						</configuration>
 					</execution>
 					<execution>
@@ -82,6 +82,11 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>io.github.git-commit-id</groupId>
+				<artifactId>git-commit-id-maven-plugin</artifactId>
+				<version>5.0.0</version>
 			</plugin>
 		</plugins>
 	</build>
